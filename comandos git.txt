@@ -1,0 +1,34 @@
+GIT
+
+// para se identificar no GIT
+git config --global user.name "Silvio Bezerra"
+
+git config --global user.email "silvio.bezerra@talentfour.com.br"
+
+
+// para iniciar repositório
+git init
+
+// para verificar status dos arquivos
+git status
+
+// para adicionar arquivo para commit (arquivo ficará como tracked)
+git add <nome arquivo>
+
+// ou para adicionar todos os arquivos
+git add .
+
+// para remover arquivo que foi adicionado 
+git rm --cached index.html
+
+// para executar o commit
+git commit -m "primeira versão com html e script js"
+
+// verificar todos os commits
+git log
+
+
+// para ignorar arquivos, para não serem trackeados
+--> crie o arquivo .gitignore e coloque dentro dele arquivos e diretórios a serem ignorados no "git add"
+
+
