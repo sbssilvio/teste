@@ -32,3 +32,54 @@ git log
 --> crie o arquivo .gitignore e coloque dentro dele arquivos e diretórios a serem ignorados no "git add"
 
 
+// criar branch
+git branch <nome branch>
+
+// visualizar as branchs
+git branch
+
+
+// para mudar de branch
+git checkout <nome branch>
+
+// para atualizar a branch com as alterações feitas em outra branch
+// no exemplo abaixo foi criada uma branch chamada cadastro-cliente, foi criada uma pasta e arquivo e agora vamos atualizar a branch development
+// 1o. vá para a branch a ser atualizada
+git branch development
+
+// 2o. execute o comando merge com o nome da branch onde foram feitas alterações
+git merge cadastro-cliente
+
+
+// para renomear branch (primeiro tem que estar na branch desejada)
+git branch -M <novo nome da branch>
+
+// para criar repositório no github (criará um remote com o nome origin)
+git remote add origin https://github.com/sbssilvio/teste.git
+
+// para ver a branch no remote
+git remote
+
+// para subir os arquivos do repositório local para o github
+git push -u <nome remote> <nome da branch para subir>
+
+git checkout main
+git push -u origin main
+
+git checkout development
+git push -u origin development
+
+git checkout cadastro-cliente
+git push -u origin cadastro-cliente
+
+// para obter arquivos do github
+git clone <url do github>
+git clone https://github.com/sbssilvio/teste
+
+
+// para atualizar todas branchs locais (puxar remoto do github)
+git pull
+
+// para atualizar uma branch específica (puxar remoto do github)
+git pull <remoto> <branch específica>
+git pull origin main
